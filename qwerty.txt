@@ -1,0 +1,47 @@
+inputData[globalContext.Steps.WhenAndWhy].data.WhenAndWhy.ActionReasonCode
+
+inputData[globalContext.Steps.Assignment].data.Assignment.EffectiveOfDate
+
+map[EffectiveOfDate] = inputData[globalContext.Steps.Assignment].data.Assignment.EffectiveOfDate;
+
+let addRowKeys = Object.keys(inputData[oracle_hcm_compensationpublicUI:individual-compensation].data.UserChanges.AddRows);
+
+let planName = inputData[oracle_hcm_compensationpublicUI:individual-compensation].data.UserChanges.AddRows[addRowKeys[0]].PlanName;
+
+planName,user name, effective start date, value string
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ globalContext.ActionReasonCode = actionOccurrenceObject.ActionReasonCode;
+        globalContext.Name = actionOccurrenceObject.ParentEntityName;
+        globalContext.ProposedJob = assignmentDelta.BusinessTitle;
+        globalContext.Date = assignmentDelta.EffectiveOfDate;
+
+
+
+
